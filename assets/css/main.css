@@ -161,7 +161,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom: 1px solid;
 		text-decoration: none;
 	}
 
@@ -294,13 +294,13 @@ input, select, textarea {
 	}
 
 	a {
-		color: #212931;
-		border-bottom-color: rgba(33, 41, 49, 0.5);
+		color: #0064c8;
+		border-bottom-color: rgb(0, 106, 211);
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
-			color: #18bfef !important;
+			border-bottom-color: rgb(1, 128, 255);
+			color: #1500ff !important;
 		}
 
 	strong, b {
@@ -2636,7 +2636,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 4rem 0;
+			margin: .4rem 0;
 			width: 100%;
 		}
 
@@ -2938,14 +2938,18 @@ input, select, textarea {
 		}
 
 		header > h4 + p {
-			font-size: 0.8rem;
 			margin-top: -0.75rem;
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
+			margin: 0 0 .2rem 0;
 			text-align: center;
 		}
+
+		header.major.separator {
+			margin-top: 4rem;
+		}
+
 
 			header.major > :last-child {
 				margin-bottom: 0;
@@ -2958,7 +2962,7 @@ input, select, textarea {
 
 			header.major > .date {
 				font-size: 1rem;
-				margin: 0 0 4rem 0;
+				margin: 0 0 .2rem 0;
 			}
 
 				header.major > .date:before, header.major > .date:after {
@@ -2979,6 +2983,10 @@ input, select, textarea {
 				}
 
 				header.major > h2 {
+					text-align: center;
+				}
+
+				header.major > h4 {
 					text-align: left;
 				}
 
@@ -4719,4 +4727,23 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	}
+
+
+	.video-float {
+		float: left;
+		width: 320px;
+		max-width: 40vw;
+		margin: -16px;
+		margin-left: -48px;
+	}
+
+	@media (max-width: 600px) {
+		.video-float {
+			float: none;
+			display: block;
+			margin: 0 auto 1em auto;
+			width: 100%;
+			max-width: 100%;
+		}
 	}

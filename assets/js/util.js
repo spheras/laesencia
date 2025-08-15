@@ -133,7 +133,8 @@
 
 						}, config.delay);
 
-				};
+			};
+			$this.data('hidePanel', $this._hide);
 
 			// Vendor fixes.
 				$this

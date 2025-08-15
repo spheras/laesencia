@@ -30,6 +30,16 @@ function setActiveNav(el, url, event, callback) {
 
     if (url && url !== window.location.pathname) {
         replaceContentFromUrl('#main', url, callback);
+        var $navPanel = $('#navPanel');
+        if ($navPanel.length && $('body').hasClass('is-navPanel-visible')) {
+            // mover el scroll hasta #main
+            $('html, body').animate({
+              scrollTop: $('#main').offset().top
+            }, 500);
+            if ($navPanel.data('hidePanel')) {
+              $navPanel.data('hidePanel')();
+            }
+        }
         return false;
     }
     return true;
@@ -42,7 +52,7 @@ function openMap(el, event) {
 				prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/",
 				tileSources: {
 					type: 'image',
-					url: 'assets/book/map.png'
+					url: 'images/map.png'
 				},
 				showNavigator: true,
 				defaultZoomLevel: 1,

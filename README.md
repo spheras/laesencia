@@ -1,2 +1,2 @@
 # laesencia
-repositorio para la saga - La esencia
+repositorio para la web de La Esencia - [ Luz de la Mañana ]
