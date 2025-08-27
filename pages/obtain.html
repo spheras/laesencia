@@ -2,8 +2,99 @@
 <article class="post featured">
     <header class="major">
         <h2><a href="#">¡Lo Quiero!</a></h2>
-        <p>Justo Justo cuando estás viendo esto, estoy a punto de empezar a publicar la novela en Amazon. 
-            Cuando la web esté oficialmente terminada, la publicación ya será una realidad.
-            Estáte atento.<br /></p>
+        <p>Actualmente, el libro se encuentra a la venta en <strong>Amazon</strong>, tanto su versión Kindle como la de tapa
+            blanda. Respecto a la versión de <strong>tapa dura</strong>, tengo intención de publicarla, pero no tengo una fecha concreta
+            aún.<br /><br />
+            A continuación tienes enlaces a las dos versiones del libro, puedes consultar allí el precio de los mismos,
+            e incluso una vista previa. </p>
+
+        <div class="book-links">
+            <div class="book-version">
+                <a href="https://kdp.amazon.com/amazon-dp-action/es/dualbookshelf.marketplacelink/B0FNXDL4YR"
+                    target="_blank" class="book-link">
+                    <img src="/images/kindle-cover.jpg" alt="Portada Kindle" class="book-cover" />
+                    <div class="book-info">
+                        <h3>Versión Kindle</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="book-version">
+                <a href="https://kdp.amazon.com/amazon-dp-action/es/dualbookshelf.marketplacelink/B0FNXTZ35X"
+                    target="_blank" class="book-link">
+                    <video class="book-video-cover" autoplay loop muted playsinline>
+                        <source src="../images/3d-preview.webm" type="video/webm">
+                        Tu navegador no soporta video con transparencia.
+                    </video>
+                    <div class="book-info">
+                        <h3>Tapa Blanda</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <style>
+            .book-links {
+                display: flex;
+                gap: 2rem;
+                margin-top: 2rem;
+                justify-content: center;
+            }
+
+            .book-version {
+                background: #fff;
+                border-radius: 1rem;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+                overflow: hidden;
+                transition: transform 0.2s;
+                width: 260px;
+                text-align: center;
+            }
+
+            .book-version:hover {
+                transform: translateY(-6px) scale(1.03);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            }
+
+            .book-link {
+                text-decoration: none;
+                color: inherit;
+                display: block;
+                padding: 1rem;
+            }
+
+            .book-cover {
+                width: 120px;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 0.5rem;
+                margin-bottom: 1rem;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
+            }
+
+            .book-video-cover {
+                width: 130px;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .book-info h3 {
+                margin: 0.5rem 0 0.5rem 0;
+                font-size: 1.2rem;
+                color: #0077cc;
+            }
+
+            .book-info ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                font-size: 0.98rem;
+                color: #444;
+            }
+
+            .book-info ul li {
+                margin-bottom: 0.4rem;
+            }
+        </style>
     </header>
 </article>

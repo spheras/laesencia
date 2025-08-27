@@ -4738,6 +4738,19 @@ input, select, textarea {
 		margin-left: -48px;
 	}
 
+	.amazon-button{
+		display: inline-flex;
+		align-items: center;
+		background: linear-gradient(90deg, #FF9900 0%, #FFB84D 100%);
+		color: #232F3E;
+		padding: 1px 10px;
+		border-radius: 24px;
+		text-decoration: none;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		transition: background 0.2s;
+		gap: 10px;
+	}
+
 	@media (max-width: 600px) {
 		.video-float {
 			float: none;
